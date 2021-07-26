@@ -1,0 +1,44 @@
+READ ME
+
+- Observation periods : 16 Feb 2019 ~ 19 Mar 2019
+- Observation area : Gulf of Alaska
+- Data type : Physical and Chemical
+
+ - The data was corrected by 
+   Gennady Kantakov, Igor Shurpa, Arkadii Ivanov, Anna Vazhova
+   and Hae Kun Jung
+
+- Data processing by Hae Kun Jung (e-mail : sesely@naver.com)
+
+-----------------------------------------------#IYS #GOA----------------------------------------------
+
+1 colume : Number of Trawl
+2 colume : Number of CTD (Sea-Bird) casting
+3 colume : Number of Station on the Map
+4 colume : Year (Ship time +10h from UTC)
+5 colume : Month (Ship time +10h from UTC)
+6 colume : Day (Ship time +10h from UTC)
+7 colume : Time (Ship time +10h from UTC)
+8 colume : Min (Ship time +10h from UTC)
+9 colume : Latitude position of station (based on 100 degree)
+10 colume : Longitude position of station (based on 100 degree)
+11 colume : Bottom depth
+12 colume : Depth
+13 colume : Temperature from CTD (Model : 11 plus) (until 1000m)
+14 colume : Salinity from CTD (Model : Sea-Bird 11 plus) (until 1000m)
+------- Temperature and salinity by each depth from Sea-Bird CTD are mean value between down and up casiting)----------
+15 colume : Temperature from CTD (Model : Rinko) (until 600m)
+16 colume : Salinity from CTD (Model : Rinko) (until 600m)
+17 colume : Conductivity from CTD (Model : Rinko) (until 600m)
+18 colume : EC25 from CTD (Model : Rinko) (until 600m)
+19 colume : Density from CTD (Model : Rinko) (until 600m)
+20 colume : Sigma T from CTD (Model : Rinko) (until 600m)
+21 colume : Chl-fluence from CTD (Model : Rinko) (until 600m)
+22 colume : Chl-a from CTD (Model : Rinko) (until 600m)
+23 colume : Turbidity from CTD (Model : Rinko) (until 600m)
+24 colume : Desolved Oxygen from CTD (Model : Rinko) (until 600m)
+25 colume : Desolved Oxygen from CTD (Model : Rinko) (until 600m)
+26 colume : Desolved Oxygen from CTD (Model : Rinko) (until 600m)
+27 colume : PH from standard depth (mainly 5m) In LAB
+28 colume : Desolved Oxygen from standard depth (5m, 25m, 50m, 75m, 100m, 150m, 200m, 400m, 600m, 1000m) In LAB
+29 colume : BOD in 5m depth In LAB
