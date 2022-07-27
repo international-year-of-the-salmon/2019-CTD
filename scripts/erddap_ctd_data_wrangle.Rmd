@@ -72,6 +72,7 @@ combined_event_ctd <- sheet2 %>%
          maximum_sampling_depth_meters, latitude_start_decdeg = LAT, 
         longitude_start_decdeg = LON, bottom_depth_meters = `Bot. Depth`,
    instrument_type, instrument_model,
+   "sampling_depth_meters" = DEPTH,
     "sea_water_temperature" = `TEM_S`,
     "sea_water_salinity" = `SAL_S`,
     "sea_water_conductivity" = `Cond. [mS/cm]_R`,
