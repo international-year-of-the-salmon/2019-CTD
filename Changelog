@@ -1,28 +1,25 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2017-06-20
+## [1.0.0] - 2022-07-27
 
 ### Changed
 
 - Change date to ISO 8601 format 
 - The longitude was recorded as positive values, however, after QC and cross-reference to other data recorded during the same cruise, it is clear that the values should be negative.
 - Re-write column names for clarity: "new" = 'old'
-    "seabird_sea_water_temperature" = `TEM_S`,
-    "rinko_sea_water_temperature" = `TEM_R`,
-    "rinko_sea_water_practical_salinity" = `SAL_R`,
-    "seabird_sea_water_practical_salinity" = `SAL_S`,
-    pH,
-    "concentration_of_oxygen" = `O2 [ml/l]`,
-    "sea_water_electrical_conductivity" = `Cond. [mS/cm]_R`,
+       "sea_water_temperature" = `TEM_S`,
+    "sea_water__salinity" = `SAL_S`,
+    "sea_water_conductivity" = `Cond. [mS/cm]_R`,
+    "sea_water_EC25" = `EC25 [uS/cm]_R`,
     "sea_water_density" = `Density [kg/m^3]_R`,
     "sea_water_sigma_t" = `SigmaT [ ]_R`,
-    "chlorophyll_flu" = `Chl-Flu. [ppb]_R`,
-    "chlorophyll_a" = `Chl-a [ug/l]_R`,
-    "turbidity" = `Turb-M [FTU]_R`,
-    "dissolved_oxygen" = `DO [mg/l]_R`,
-    "battery_voltage" = `Batt. [V]_R`,
-    "BOD5" = `BOD5[ml/l]`,
-    "dissolved_oxygen_saturation" = `DO [%]_R`,
-    "EC25" = `EC25 [uS/cm]_R`
+    "sea_water_turbidity" = `Turb-M [FTU]_R`,
+    "sea_water_chlorophyll_fluorescence" = `Chl-Flu. [ppb]_R`,
+    "sea_water_chlorophyll_a_concentration" = `Chl-a [ug/l]_R`,
+    "sea_water_dissolved_oxygen" = `DO [mg/l]_R`,
+    "sea_water_dissolved_oxygen_saturation" = `DO [%]_R`,
+    "sea_water_concentration_of_oxygen" = `O2 [ml/l]`,
+    "sea_water_pH" = pH,
+    "BOD5" = `BOD5[ml/l]`
 
