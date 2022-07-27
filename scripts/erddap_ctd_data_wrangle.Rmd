@@ -60,6 +60,7 @@ combined_event_ctd <- sheet2 %>%
          year = year(eventDate),
          month = month(eventDate),
          day = day(eventDate),
+         time_start = substr(eventDate, 12, 19),
          time_zone_code = "UTC",
          minimum_sampling_depth_meters = 0,
          instrument_type = "CTD", instrument_model = "SBE 25 Sealogger CTD") |> 
@@ -67,7 +68,7 @@ combined_event_ctd <- sheet2 %>%
   mutate(maximum_sampling_depth_meters = max(DEPTH)) |> 
   ungroup() |> 
   select(cruise_name, vessel_name_abbr, zone, "station" = `NO.(ST)`, event_type,
-         station_event_ID, day, "time_start" = `TIME(ship time)`, 
+         station_event_ID, day, time_start, 
         "event_date" = eventDate,  time_zone_code, minimum_sampling_depth_meters, 
          maximum_sampling_depth_meters, latitude_start_decdeg = LAT, 
         longitude_start_decdeg = LON, bottom_depth_meters = `Bot. Depth`,
