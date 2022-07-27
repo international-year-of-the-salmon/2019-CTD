@@ -82,7 +82,7 @@ combined_event_ctd <- sheet2 %>%
     "sea_water_chl_fluorescence" = `Chl-Flu. [ppb]_R`,
     "sea_water_chl_a_concentration" = `Chl-a [ug/l]_R`,
     "sea_water_dissolvedO2" = `DO [mg/l]_R`,
-    "sea_water_dissolvedO2_saturation" = `DO [%]_R`,
+    "sea_water_dissolvedO2_sat" = `DO [%]_R`,
     "sea_water_concentration_of_oxygen" = `O2 [ml/l]`,
     "sea_water_pH" = pH,
     "BOD5" = `BOD5[ml/l]`
