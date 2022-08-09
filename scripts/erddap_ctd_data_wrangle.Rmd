@@ -23,14 +23,14 @@ library(parsedate)
 
 ```{r download data}
 
-sheet2 <- read_csv(here("original_data", "Data_IYS_conbined_Final-Sheet2.csv"))
+orig <- read_csv(here("original_data", "Data_IYS_conbined_Final-Sheet2.csv"))
 
 ```
 
 - Change date to ISO 8601 format (eg. `r format_iso_8601(as.POSIXct(Sys.time(), format = "%Y-%m-%d %H:%M%:S", tz="Asia/Kamchatka"))`) by adding together the year, month, day, and shiptime columns. 
 
 ```{r Date ISO 8601}
-sheet2 <- sheet2 %>%
+sheet2 <- orig %>%
   mutate(eventDate_text = str_c(YEAR, MONTH, DAY, `TIME(ship time)`, `MIN(ship time)`, sep="-"),
          eventDate = ymd_hm(eventDate_text, tz = "Asia/Kamchatka")) %>%
   mutate(eventDate = format_iso_8601(as.POSIXct(eventDate,
@@ -55,7 +55,7 @@ combined_event_ctd <- sheet2 %>%
          vessel_name_abbr = "Kaganovsky",
          zone = "NA",
          event_type = "CTD",
-         station_event_ID = paste(cruise_name, zone, `NO.(ST)`, event_type, 
+         station_event_ID = paste(cruise_name, vessel_name_abbr, `NO.(ST)`, event_type, 
                                   sep = "-"),
          year = year(eventDate),
          month = month(eventDate),
