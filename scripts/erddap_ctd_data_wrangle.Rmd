@@ -55,7 +55,7 @@ combined_event_ctd <- sheet2 %>%
          vessel_name_abbr = "Kaganovsky",
          zone = "NA",
          event_type = "CTD",
-         station_event_ID = paste(cruise_name, vessel_name_abbr, `NO.(ST)`, event_type, 
+         station_event_ID = paste(cruise_name, vessel_name_abbr, `NO.Trawl`, event_type, 
                                   sep = "-"),
          year = year(eventDate),
          month = month(eventDate),
@@ -67,7 +67,7 @@ combined_event_ctd <- sheet2 %>%
   group_by(station_event_ID) |> 
   mutate(maximum_sampling_depth_meters = max(DEPTH)) |> 
   ungroup() |> 
-  select(cruise_name, vessel_name_abbr, zone, "station" = `NO.(ST)`, event_type,
+  select(cruise_name, vessel_name_abbr, zone, "station" = `NO.Trawl`, event_type,
          station_event_ID, year, month, day, time_start, 
         "event_date" = eventDate,  time_zone_code, minimum_sampling_depth_meters, 
          maximum_sampling_depth_meters, latitude_start_decdeg = LAT, 
